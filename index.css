@@ -9,8 +9,9 @@
 /* head */
 .head-back{
 	height: 30px;
-	position: fixed;
+	position: sticky;
 	width: 100vw;
+	margin-bottom: 10px;
 }
 [data-theme="dark"] {
 	--font-color: #f8f8f2;
