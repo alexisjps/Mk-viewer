@@ -6,7 +6,12 @@
 	--dbgh-color: rgba(0, 0, 0, 0.2);
 	--dbga-color: rgba(0, 0, 0, 0.3);
 }
-
+/* head */
+.head-back{
+	height: 30px;
+	position: fixed;
+	width: 100vw;
+}
 [data-theme="dark"] {
 	--font-color: #f8f8f2;
 	--bg-color: #282a36;

@@ -42,14 +42,6 @@
 	<meta property="og:title" content="Marcdown">
 	<meta property="og:description" content="Lightweight markdown viewer and editor">
 	<meta property="og:image" content="icons/icon-144x144.png">
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@kallyasl">
-	<meta name="twitter:creator" content="@kallyasl">
-	<meta name="twitter:url" content="https://kallyasmedia.github.io/marcdown/">
-	<meta name="twitter:title" content="Marcdown">
-	<meta name="twitter:description" content="Lightweight markdown viewer and editor">
-	<meta name="twitter:image" content="icons/icon-144x144.png">
 
 	<!-- Web Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
@@ -73,7 +65,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@latest/build/styles/dracula.min.css">
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@latest/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/asvd/syncscroll/syncscroll.min.js"></script>
-
+	<div class="head-back"><a href="https://dev-local.tech/">Retourner sur le toolbox</a></div>
 </head>
 <body>
 
@@ -117,7 +109,7 @@
 		</header>
 		<section class="content">
 			<div id="editor">
-				<textarea class="syncscroll" name="sync" id="getm" placeholder="paste markdown here ✨" onkeyup="Preview.Update()" onmouseup="mouseUp()" autofocus></textarea>
+				<textarea class="syncscroll" name="sync" id="getm" placeholder="Créer votre fichier en marcdown ✨" onkeyup="Preview.Update()" onmouseup="mouseUp()" autofocus></textarea>
 			</div>
 			<div class="markdown syncscroll" name="sync" id="viewer" style="display: none;"></div>
 			<div class="markdown syncscroll" name="sync" id="buffer"></div>
@@ -129,9 +121,9 @@
 					<span id="colno"></span>
 				</div>
 				<div class="preview">
-					<button onclick="slide('nill')" title="Hide editor">←</button>
-					<button onclick="slide('half')" title="Side by side">●</button>
-					<button onclick="slide('full')" title="Hide viewer">→</button>
+					<button onclick="slide('nill')" title="Cacher l'éditeur de marcdown">←</button>
+					<button onclick="slide('full')" title="Écran entier">●</button>
+					<button onclick="slide('full')" title="Cacher le format txt">→</button>
 				</div>
 				<div style="flex: 1 1 0; text-align: right;">
 					<span id="charcount"></span>
