@@ -145,8 +145,8 @@ const mouseUp = () => {
 	let lineno = document.getElementById('lineno')
 	let colno = document.getElementById('colno')
 	let textLines = mark.value.substr(0, mark.selectionStart).split('\n')
-	lineno.innerHTML = `Line ${textLines.length}`
-	colno.innerHTML = `Col ${textLines[textLines.length - 1].length}`
+	lineno.innerHTML = `Lignes ${textLines.length}`
+	colno.innerHTML = `Colonnes ${textLines[textLines.length - 1].length}`
 }
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]')
 if (localStorage.getItem('marcdownTheme') == 'dark') {
