@@ -60,12 +60,12 @@ const Preview = {
 		if (text !== '') {
 			let wordCount = viewer.innerText.trim().replace(regex, ' ').split(' ').length
 			let charCount = viewer.innerText.replace(regex, '').length
-			this.wordcount.innerHTML = `${wordCount} words`
-			this.charcount.innerHTML = `${charCount} chars`
+			this.wordcount.innerHTML = `${wordCount} mots`
+			this.charcount.innerHTML = `${charCount} caractères`
 			this.save.disabled = false
 		} else {
-			this.wordcount.innerHTML = '0 words'
-			this.charcount.innerHTML = '0 chars'
+			this.wordcount.innerHTML = '0 mots'
+			this.charcount.innerHTML = '0 caractères'
 			this.save.disabled = true
 		}
 		mouseUp()
